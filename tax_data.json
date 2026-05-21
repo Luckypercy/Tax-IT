@@ -1,0 +1,20 @@
+{
+    "returns": [
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        }
+    ],
+    "receipts": [
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        }
+    ],
+    "penalties": []
+}
