@@ -1,2 +1,2 @@
-print("Welcome to Tax-IT")
+print("Welcome to TaxIT")
 print("Botswana AI Tax Journey Begins")

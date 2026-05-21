@@ -3,6 +3,8 @@ import json
 from dataclasses import dataclass, asdict
 from typing import List, Optional
 from pathlib import Path
+from reminders import upcoming_returns
+from tax_manager import tax_summary
 
 
 # =========================
@@ -244,7 +246,7 @@ class TaxComplianceAgent:
 
     def dashboard(self):
 
-        print("\n========== TAX-IT ==========")
+        print("\n========== TAXIT ==========")
 
         print(
             f"Returns: {len(self.tax_returns)}"
@@ -346,15 +348,5 @@ Status: {status}
 """
         )
 
-    print("\nSUMMARY")
-
-    print(f"Total Returns: {total_returns}")
-    print(f"Submitted: {submitted}")
-    print(f"Outstanding: {outstanding}")
-    print(f"Overdue: {overdue}")
-
-    print(
-        f"Penalties Identified: {len(self.penalties)}"
-    )
-
-    print("==========================================")
+upcoming_returns()
+tax_summary(6,6,0,0)
