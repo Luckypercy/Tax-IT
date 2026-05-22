@@ -1,3 +1,8 @@
+from unallocated_receipts import (
+    add_unallocated_receipt,
+    show_unallocated_receipts
+)
+
 from returns import add_return, show_returns, returns
 from receipts import capture_receipt, receipts
 from dashboard import dashboard_summary
@@ -22,6 +27,19 @@ capture_receipt("Sales Income", 5000)
 capture_receipt("Salary Payments", 3000)
 capture_receipt("WHT Payments", 18000)
 
+# UNALLOCATED RECEIPTS
+add_unallocated_receipt(
+    "VAT",
+    2500,
+    "Payment received without submitted return"
+)
+
+add_unallocated_receipt(
+    "PAYE",
+    1800,
+    "Payment exceeds submitted liability"
+)
+
 
 # SHOW DASHBOARD
 dashboard_summary(returns, receipts)
@@ -37,6 +55,8 @@ show_penalties(returns)
 
 # RISK CHECK
 risk = tax_risk("Outstanding")
+
+show_unallocated_receipts()
 
 print("\nQUICK TAX RISK CHECK")
 print("---------------------------------------------")
