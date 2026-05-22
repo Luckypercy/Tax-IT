@@ -111,6 +111,55 @@
             "amount": 18000,
             "submitted": false,
             "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
+        },
+        {
+            "return_type": "VAT",
+            "due_date": "2026-05-28",
+            "amount": 18000,
+            "submitted": false,
+            "submission_date": null
         }
     ],
     "receipts": [
@@ -206,6 +255,48 @@
         },
         {
             "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-21",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-22",
+            "amount": 5000,
+            "tax_type": "VAT",
+            "description": "Sales Income"
+        },
+        {
+            "date": "2026-05-22",
             "amount": 5000,
             "tax_type": "VAT",
             "description": "Sales Income"
