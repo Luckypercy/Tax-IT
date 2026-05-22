@@ -2,6 +2,7 @@ from returns import add_return, show_returns, returns
 from receipts import capture_receipt, receipts
 from dashboard import dashboard_summary
 from risk_engine import tax_risk
+from penalties import show_penalties
 
 
 print("=============================================")
@@ -10,9 +11,10 @@ print("=============================================")
 
 
 # ADD RETURNS
-add_return("VAT", 18000, "2026-05-28", "Pending")
+add_return("VAT",  18000, "2026-05-28", "Pending")
 add_return("PAYE", 12000, "2026-05-30", "Pending")
-add_return("WHT", 19000, "2026-05-30", "Pending")
+add_return("WHT",  19000, "2026-05-30", "Pending")
+add_return("CIT",  25000, "2026-04-30", "Pending")  # overdue — April deadline missed
 
 
 # CAPTURE RECEIPTS
@@ -27,6 +29,10 @@ dashboard_summary(returns, receipts)
 
 # SHOW REPORT
 show_returns()
+
+
+# PENALTIES
+show_penalties(returns)
 
 
 # RISK CHECK
