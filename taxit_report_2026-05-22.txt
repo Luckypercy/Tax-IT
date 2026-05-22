@@ -1,0 +1,52 @@
+=============================================
+         WELCOME TO TAX-IT
+   Botswana AI Tax Compliance Tool
+=============================================
+
+[1] ADDING TAX RETURNS
+---------------------------------------------
+  VAT return added (P18000)
+  PAYE return added (P12000)
+  WHT return added (P8500)
+
+[2] CAPTURING RECEIPTS
+---------------------------------------------
+  Receipt captured: Sales Income (P5000)
+  Receipt captured: Salary Payments (P3000)
+  Receipt captured: Withholding Payment (P1500)
+
+[3] CHECKING REMINDERS
+---------------------------------------------
+  REMINDER: VAT due in 6 days (2026-05-28)
+
+[4] DETECTING LATE RETURNS
+---------------------------------------------
+
+[5] DASHBOARD SUMMARY
+---------------------------------------------
+  Returns:     3
+  Receipts:    3
+  Submitted:   0
+  Outstanding: 3
+  Penalties:   0
+
+[6] COMPLIANCE REPORT
+---------------------------------------------
+  VAT    | Due: 2026-05-28 | P18000    | Pending
+  PAYE   | Due: 2026-05-30 | P12000    | Pending
+  WHT    | Due: 2026-06-15 | P8500     | Pending
+
+  Total: 3 | Submitted: 0 | Outstanding: 3 | Overdue: 0
+  Penalties: 0
+
+[7] QUICK TAX RISK CHECK
+---------------------------------------------
+  Company:  Lucky's Business
+  Tax Type: VAT
+  Due Date: 2026-05-28
+  Status:   Outstanding
+  Risk:     High
+
+=============================================
+         TAX-IT RUN COMPLETE
+=============================================

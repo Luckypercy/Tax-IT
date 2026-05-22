@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "bMxffy8dj6XZ2hmUveMVW"
+uri = "file://taxit_report_2026-05-22.txt"
+type = "text"
+title = "Tax-IT Compliance Report – 2026-05-22"

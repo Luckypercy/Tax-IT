@@ -3,6 +3,8 @@ import json
 from dataclasses import dataclass, asdict
 from typing import Optional
 from pathlib import Path
+import io
+import sys
 
 
 # =========================
@@ -116,8 +118,34 @@ class TaxComplianceAgent:
 
 
 # =========================
+# EXPORT HELPER
+# =========================
+
+def export_report(content: str):
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    filename = f"taxit_report_{today}.txt"
+    with open(filename, "w") as f:
+        f.write(content)
+    print(f"\n  Report saved to: {filename}")
+
+
+# =========================
 # RUN THE PROJECT
 # =========================
+
+buffer = io.StringIO()
+tee = sys.stdout
+
+
+class Tee(io.TextIOBase):
+    def write(self, msg):
+        tee.write(msg)
+        buffer.write(msg)
+        return len(msg)
+    def flush(self):
+        tee.flush()
+
+sys.stdout = Tee()
 
 print("=" * 45)
 print("         WELCOME TO TAX-IT")
@@ -172,3 +200,6 @@ agent.save_data()
 print("\n" + "=" * 45)
 print("         TAX-IT RUN COMPLETE")
 print("=" * 45)
+
+sys.stdout = tee
+export_report(buffer.getvalue())
