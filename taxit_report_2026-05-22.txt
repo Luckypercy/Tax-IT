@@ -1,52 +1,76 @@
-=============================================
-         WELCOME TO TAX-IT
-   Botswana AI Tax Compliance Tool
-=============================================
+==================================================
+           WELCOME TO TAX-IT
+    Botswana AI Tax Compliance Tool
+    Report Date: 2026-05-22
+==================================================
 
-[1] ADDING TAX RETURNS
+[1] TAX RETURNS
+--------------------------------------------------
+VAT return added (P18000)
+PAYE return added (P12000)
+WHT return added (P19000)
+CIT return added (P25000)
+
+[2] RECEIPTS
+--------------------------------------------------
+Receipt captured: Sales Income (P5000)
+Receipt captured: Salary Payments (P3000)
+Receipt captured: WHT Payments (P18000)
+
+[3] UNALLOCATED RECEIPTS
+--------------------------------------------------
+Unallocated receipt detected: VAT (P2500)
+Unallocated receipt detected: PAYE (P1800)
+Unallocated receipt detected: WHT (P3200)
+
+UNALLOCATED RECEIPTS
 ---------------------------------------------
-  VAT return added (P18000)
-  PAYE return added (P12000)
-  WHT return added (P8500)
+VAT | P2500 | Payment received without submitted return
+PAYE | P1800 | Payment exceeds submitted liability
+WHT | P3200 | No matching return found for this period
 
-[2] CAPTURING RECEIPTS
+[4] DASHBOARD SUMMARY
+--------------------------------------------------
+
+DASHBOARD SUMMARY
 ---------------------------------------------
-  Receipt captured: Sales Income (P5000)
-  Receipt captured: Salary Payments (P3000)
-  Receipt captured: Withholding Payment (P1500)
+Returns:     4
+Receipts:    3
+Submitted:   0
+Outstanding: 4
 
-[3] CHECKING REMINDERS
+[5] COMPLIANCE REPORT
+--------------------------------------------------
+
+COMPLIANCE REPORT
 ---------------------------------------------
-  REMINDER: VAT due in 6 days (2026-05-28)
+VAT | Due: 2026-05-28 | P18000 | Pending
+PAYE | Due: 2026-05-30 | P12000 | Pending
+WHT | Due: 2026-05-30 | P19000 | Pending
+CIT | Due: 2026-04-30 | P25000 | Pending
 
-[4] DETECTING LATE RETURNS
+[6] PENALTIES & LATE FEES
+--------------------------------------------------
+
+PENALTIES & LATE FEES
 ---------------------------------------------
+  CIT
+    Due Date:     2026-04-30
+    Days Overdue: 22
+    Late Fee:     P500
+    Interest:     P8250.0
+    TOTAL OWED:   P8750.0
 
-[5] DASHBOARD SUMMARY
----------------------------------------------
-  Returns:     3
-  Receipts:    3
-  Submitted:   0
-  Outstanding: 3
-  Penalties:   0
-
-[6] COMPLIANCE REPORT
----------------------------------------------
-  VAT    | Due: 2026-05-28 | P18000    | Pending
-  PAYE   | Due: 2026-05-30 | P12000    | Pending
-  WHT    | Due: 2026-06-15 | P8500     | Pending
-
-  Total: 3 | Submitted: 0 | Outstanding: 3 | Overdue: 0
-  Penalties: 0
+  GRAND TOTAL PENALTIES: P8750.0
 
 [7] QUICK TAX RISK CHECK
----------------------------------------------
+--------------------------------------------------
   Company:  Lucky's Business
   Tax Type: VAT
   Due Date: 2026-05-28
   Status:   Outstanding
   Risk:     High
 
-=============================================
-         TAX-IT RUN COMPLETE
-=============================================
+==================================================
+          TAX-IT RUN COMPLETE
+==================================================
